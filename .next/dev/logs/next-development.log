@@ -1,1 +1,164 @@
 [00:00:00.679] Server  LOG      ✓ Ready in 517ms
+[00:05:47.743] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../error'
+   8 | import Pagination from "@/components/Pagination/Pagination";
+   9 | import Loading from "../loading";
+> 10 | import ErrorComponent from "../error";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+  13 | import SearchBox from "@/components/SearchBox/SearchBox";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.744] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../error'
+   8 | import Pagination from "@/components/Pagination/Pagination";
+   9 | import Loading from "../loading";
+> 10 | import ErrorComponent from "../error";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+  13 | import SearchBox from "@/components/SearchBox/SearchBox";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.745] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../error'
+   8 | import Pagination from "@/components/Pagination/Pagination";
+   9 | import Loading from "../loading";
+> 10 | import ErrorComponent from "../error";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+  13 | import SearchBox from "@/components/SearchBox/SearchBox";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.746] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../error'
+   8 | import Pagination from "@/components/Pagination/Pagination";
+   9 | import Loading from "../loading";
+> 10 | import ErrorComponent from "../error";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+  13 | import SearchBox from "@/components/SearchBox/SearchBox";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.747] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve '../loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "../error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.748] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve '../loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "../error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.750] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve '../loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "../error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.751] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve '../loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "../error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:47.772] Server  LOG      ✓ Compiled in 358ms
+[00:06:31.524] Server  LOG      ✓ Compiled in 43ms
+[00:31:00.152] Server  LOG      ✓ Compiled in 67ms
