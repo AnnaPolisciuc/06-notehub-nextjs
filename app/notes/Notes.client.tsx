@@ -6,7 +6,7 @@ import { fetchNotes, createNote } from "@/lib/api";
 import type { Note, NoteResponse } from "@/types/note";
 import NotesList from "@/components/NoteList/NoteList";
 import Pagination from "@/components/Pagination/Pagination";
-import Loading from "./loading";
+import Loading from "../loading";
 import ErrorComponent from "./error";
 import Modal from "@/components/Modal/Modal";
 import NoteForm from "@/components/NoteForm/NoteForm";

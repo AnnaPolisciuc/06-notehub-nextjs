@@ -1,5 +1,6 @@
 import NoteDetailsClient from "./NoteDetails.client";
 
-export default function NotePage({ params }: { params: { id: string } }) {
-  return <NoteDetailsClient id={params.id} />;
+export default async function NotePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  return <NoteDetailsClient id={id} />;
 }

@@ -162,3 +162,712 @@ https://nextjs.org/docs/messages/module-not-found
 [00:05:47.772] Server  LOG      ✓ Compiled in 358ms
 [00:06:31.524] Server  LOG      ✓ Compiled in 43ms
 [00:31:00.152] Server  LOG      ✓ Compiled in 67ms
+[18:17:42.427] Server  LOG      ✓ Compiled in 46ms
+[18:18:17.502] Server  LOG      ✓ Compiled in 9ms
+[18:18:44.029] Server  LOG      ✓ Compiled in 12ms
+[18:18:53.165] Server  LOG      ✓ Compiled in 11ms
+[18:34:33.358] Browser ERROR   ./app/notes/[id]/error.tsx
+Ecmascript file had an error
+app/notes/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[18:34:43.955] Server  LOG      ✓ Compiled in 13ms
+[18:36:43.225] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:36:55.897] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:37:00.406] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:37:20.887] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:38:00.270] Server  LOG      ✓ Compiled in 7ms
+[18:39:09.272] Server  LOG      ✓ Compiled in 9ms
+[18:39:10.836] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:39:21.531] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:40:09.936] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[18:43:46.988] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:46.990] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:46.991] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:46.991] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.014] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.016] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.018] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.018] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.019] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.021] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.021] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.023] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.024] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.025] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.026] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.027] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.028] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.028] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.029] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.029] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.032] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.032] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.032] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.033] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.034] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.034] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.034] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.034] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.034] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.035] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.035] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.035] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[18:43:47.071] Server  LOG      ✓ Compiled in 206ms
+[18:43:47.358] Browser ERROR   ./app/notes/Notes.client.tsx:9:1
+Module not found: Can't resolve './loading'
+   7 | import NotesList from "@/components/NoteList/NoteList";
+   8 | import Pagination from "@/components/Pagination/Pagination";
+>  9 | import Loading from "./loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import ErrorComponent from "./error";
+  11 | import Modal from "@/components/Modal/Modal";
+  12 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[18:43:47.358] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found

@@ -2,8 +2,8 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { fetchNoteById } from "@/lib/api";
-import Loading from "@/app/notes/loading";
-import ErrorComponent from "@/app/notes/error";
+import Loading from "@/app/loading";
+import ErrorComponent from "@/app/notes/[id]/error";
 import NoteDetails from "@/components/NoteDetails/NoteDetails";
 
 interface NoteDetailsClientProps {
