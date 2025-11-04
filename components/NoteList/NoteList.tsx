@@ -3,13 +3,35 @@
 import css from "./NoteList.module.css";
 import type { Note } from "@/types/note";
 import Link from "next/link";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { deleteNote } from "@/lib/api";
+import { useState } from "react";
 
 interface NoteListProps {
   notes: Note[];
-  onDelete: (id: string) => void;
 }
 
-export default function NoteList({ notes, onDelete }: NoteListProps) {
+export default function NoteList({ notes }: NoteListProps) {
+  const queryClient = useQueryClient();
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [errorId, setErrorId] = useState<string | null>(null);
+
+  const mutation = useMutation({
+    mutationFn: (id: string) => deleteNote(id),
+    onMutate: (id) => {
+      setDeletingId(id);
+      setErrorId(null);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({queryKey: ["notes"]});
+      setDeletingId(null);
+    },
+    onError: (_, id) => {
+      setErrorId(id);
+      setDeletingId(null);
+    },
+  });
+
   if (!notes.length) {
     return <p className={css.message}>No notes found.</p>;
   }
@@ -23,12 +45,18 @@ export default function NoteList({ notes, onDelete }: NoteListProps) {
           <div className={css.actions}>
             <button
               className={css.deleteButton}
-              onClick={() => onDelete(note.id)}
+              disabled={deletingId === note.id}
+              onClick={() => mutation.mutate(note.id)}
             >
-              Delete note
+              {deletingId === note.id ? "Deleting..." : "Delete note"}
             </button>
+            {errorId === note.id && (
+              <div className={css.error}>Failed to delete note. Please try again.</div>
+            )}
           </div>
-          <Link href={`/notes/${note.id}`} className={css.link}>View details</Link>
+          <Link href={`/notes/${note.id}`} className={css.link}>
+            View details
+          </Link>
         </li>
       ))}
     </ul>

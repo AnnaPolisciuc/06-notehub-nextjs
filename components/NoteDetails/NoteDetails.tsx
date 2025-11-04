@@ -1,4 +1,4 @@
-
+"use client";
 import css from "./NoteDetails.module.css";
 import type { Note } from "@/types/note";
 

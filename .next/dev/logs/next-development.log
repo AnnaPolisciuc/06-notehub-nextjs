@@ -871,3 +871,4492 @@ Import trace:
     ./app/notes/[id]/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[75:48:17.705] Server  LOG      ✓ Compiled in 138ms
+[75:49:28.453] Server  LOG      ✓ Compiled in 9ms
+[90:10:46.211] Server  LOG      ✓ Compiled in 12ms
+[90:17:54.604] Server  LOG      ✓ Compiled in 44ms
+[90:19:23.032] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/notes/[id]/NoteDetails.client.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[90:19:23.089] Server  LOG      ✓ Compiled in 15ms
+[90:19:23.725] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundaryHandler pathname="/notes/cmg..." errorComponent={function ErrorComponent} ...>
+      <LoadingBoundary name="cmgqdbdun1..." loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/notes/cmg..." tree={[...]} params={{id:"cmgqdb..."}} ...>
+                <SegmentViewNode type="page" pagePath="notes/[id]...">
+                  <SegmentTrieNode>
+                  <NotePage>
+                    <HydrationBoundary state={{...}}>
+                      <NoteDetailsClient id="cmgqdbdun1...">
+                        <NoteDetails note={{id:"cmgqdb...", ...}}>
+                          <div className="NoteDetail...">
+                            <div className="NoteDetail...">
+                              <div>
+                              <p>
+                              <p className="NoteDetail...">
++                               14.10.2025
+-                               10/14/2025
+                ...
+              ...
+
+[90:19:29.656] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.657] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.657] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.657] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.658] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.659] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.659] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.659] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.659] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.660] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.660] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.660] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.660] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.661] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.661] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.662] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:19:29.690] Server  LOG      ✓ Compiled in 14ms
+[90:19:29.796] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:5:1
+Module not found: Can't resolve '@/app/notes/loading'
+  3 | import { useQuery } from "@tanstack/react-query";
+  4 | import { fetchNoteById } from "@/lib/api";
+> 5 | import Loading from "@/app/notes/loading";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ErrorComponent from "@/app/notes/[id]/error";
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+
+Import map: aliased to relative './app/notes/loading' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[90:19:43.466] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/notes/[id]/NoteDetails.client.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[90:19:44.078] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+      <ErrorBoundary errorComponent={function ErrorComponent} errorStyles={<SegmentViewNode>} errorScripts={[...]}>
+        <ErrorBoundaryHandler pathname="/notes/cmg..." errorComponent={function ErrorComponent} ...>
+          <LoadingBoundary name="cmgqdbdun1..." loading={null}>
+            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/notes/cmg..." tree={[...]} params={{id:"cmgqdb..."}} ...>
+                    <SegmentViewNode type="page" pagePath="notes/[id]...">
+                      <SegmentTrieNode>
+                      <NotePage>
+                        <HydrationBoundary state={{...}}>
+                          <NoteDetails id="cmgqdbdun1...">
+                            <div>
+                              <h2>
+                              <p>
+                              <p>
+                              <p>
++                               14.10.2025
+-                               10/14/2025
+                    ...
+                  ...
+      ...
+
+[90:24:30.761] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.761] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.763] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.763] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.842] Server  LOG      ✓ Compiled in 179ms
+[90:24:30.842] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.843] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.843] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.843] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.844] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.844] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.845] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.845] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.846] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.846] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.846] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.847] Server  ERROR    ⨯ ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:24:30.999] Browser ERROR   ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[90:24:30.999] Browser ERROR   ./app/notes/Notes.client.tsx:10:1
+Module not found: Can't resolve '../loading'
+   8 | import NotesList from "@/components/NoteList/NoteList";
+   9 | import Pagination from "@/components/Pagination/Pagination";
+> 10 | import Loading from "../loading";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import ErrorComponent from "./error";
+  12 | import Modal from "@/components/Modal/Modal";
+  13 | import NoteForm from "@/components/NoteForm/NoteForm";
+
+Import trace:
+  Server Component:
+    ./app/notes/Notes.client.tsx
+    ./app/notes/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[90:24:54.958] Server  LOG      ✓ Compiled in 25ms
+[90:24:54.960] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/notes/[id]/NoteDetails.client.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[90:24:55.617] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundaryHandler pathname="/notes/cmg..." errorComponent={function ErrorComponent} ...>
+      <LoadingBoundary name="cmgqdbdun1..." loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/notes/cmg..." tree={[...]} params={{id:"cmgqdb..."}} ...>
+                <SegmentViewNode type="page" pagePath="notes/[id]...">
+                  <SegmentTrieNode>
+                  <NotePage>
+                    <HydrationBoundary state={{...}}>
+                      <NoteDetailsClient id="cmgqdbdun1...">
+                        <NoteDetails note={{id:"cmgqdb...", ...}}>
+                          <div className="NoteDetail...">
+                            <div className="NoteDetail...">
+                              <div>
+                              <p>
+                              <p className="NoteDetail...">
++                               14.10.2025
+-                               10/14/2025
+                ...
+              ...
+
+[90:25:01.323] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundaryHandler pathname="/notes/cmg..." errorComponent={function ErrorComponent} ...>
+      <LoadingBoundary name="cmgqdbdun1..." loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/notes/cmg..." tree={[...]} params={{id:"cmgqdb..."}} ...>
+                <SegmentViewNode type="page" pagePath="notes/[id]...">
+                  <SegmentTrieNode>
+                  <NotePage>
+                    <HydrationBoundary state={{...}}>
+                      <NoteDetailsClient id="cmgqdbdun1...">
+                        <NoteDetails note={{id:"cmgqdb...", ...}}>
+                          <div className="NoteDetail...">
+                            <div className="NoteDetail...">
+                              <div>
+                              <p>
+                              <p className="NoteDetail...">
++                               14.10.2025
+-                               10/14/2025
+                ...
+              ...
+
+[90:26:39.936] Server  LOG      ✓ Compiled in 11ms
+[90:26:40.783] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:3:32
+Parsing ecmascript source code failed
+  1 |
+  2 |
+> 3 | return <NoteDetails note={data}
+    |                                ^
+
+Unexpected token `<eof>`. Expected jsx identifier
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+[90:28:27.872] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.873] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.873] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.874] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.884] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.884] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.885] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.885] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.886] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.886] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.886] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.886] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.887] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.887] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.888] Server  ERROR    ⨯ ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[90:28:27.917] Server  LOG      ✓ Compiled in 43ms
+[90:28:28.781] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[91:37:52.784] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[91:37:52.784] Browser ERROR   ./app/notes/[id]/NoteDetails.client.tsx:6:1
+Module not found: Can't resolve '@/app/notes/[id]/'
+  4 | import { fetchNoteById } from "@/lib/api";
+  5 | import Loading from "@/app/notes/loading";
+> 6 | import ErrorComponent from "@/app/notes/[id]/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import NoteDetails from "@/components/NoteDetails/NoteDetails";
+  8 |
+  9 | interface NoteDetailsClientProps {
+
+Import map: aliased to relative './app/notes/[id]/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./app/notes/[id]/NoteDetails.client.tsx
+    ./app/notes/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[93:53:45.705] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:01:10.671] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:03:04.938] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:03:37.305] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:03:37.311] Server  LOG      ✓ Compiled in 0ms
+[94:03:43.722] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:03:47.243] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:08:34.695] Server  LOG      ✓ Compiled in 18ms
+[94:08:36.086] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:08:43.513] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:30:49.316] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:30:56.316] Server  WARN    Error: Route "/notes/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[94:33:22.851] Server  LOG      ✓ Compiled in 26ms
+[94:34:17.195] Server  LOG      ✓ Compiled in 10ms
+[94:38:56.489] Server  LOG      ✓ Compiled in 32ms
+[99:41:52.465] Server  LOG      ✓ Compiled in 29ms
+[99:47:25.360] Server  LOG      ✓ Compiled in 16ms
+[99:48:12.189] Server  LOG      ✓ Compiled in 20ms
+[99:48:12.875] Server  ERROR    ⨯ Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[99:48:42.087] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./components/NoteForm/NoteForm.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[99:48:42.147] Server  LOG      ✓ Compiled in 11ms
+[99:48:42.788] Server  ERROR    ⨯ Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[99:49:52.850] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./components/NoteForm/NoteForm.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[99:49:52.927] Server  LOG      ✓ Compiled in 13ms
+[99:51:16.685] Server  LOG      ✓ Compiled in 20ms
+[99:53:53.633] Server  LOG      ✓ Compiled in 18ms
+[99:53:54.464] Browser ERROR   ./components/NoteForm/NoteForm.tsx:17:52
+Parsing ecmascript source code failed
+  15 |   const [title, setTitle] = useState("");
+  16 |   const [content, setContent] = useState("");
+> 17 |   const [tag, setTag] = useState<NoteCreate["tag"] "">("");
+     |                                                    ^^
+  18 |
+  19 |   const handleSubmit = (e: React.FormEvent) => {
+  20 |     e.preventDefault();
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+[99:57:02.205] Server  LOG      ✓ Compiled in 11ms
+[99:57:18.510] Server  LOG      ✓ Compiled in 12ms
+[100:00:56.140] Server  LOG      ✓ Compiled in 21ms
+[100:04:54.860] Server  LOG      ✓ Compiled in 68ms
+[100:05:23.199] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.201] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.201] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.202] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.202] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.203] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.203] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.204] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.211] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.212] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.212] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.213] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.213] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.213] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.214] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.214] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.215] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.216] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.217] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.218] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.218] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.219] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.219] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.219] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.220] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.221] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.223] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.223] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.224] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.224] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.224] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.225] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:05:23.231] Server  LOG      ✓ Compiled in 18ms
+[100:05:23.462] Browser ERROR   ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[100:07:41.352] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.353] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.353] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.354] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.355] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.355] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.355] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.356] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.358] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.359] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.360] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.360] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.360] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.361] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.361] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.362] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.363] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.363] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.364] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.364] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.364] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.365] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.365] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.365] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.367] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.367] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.368] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.368] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.368] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.369] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.369] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.369] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:07:41.383] Server  LOG      ✓ Compiled in 28ms
+[100:07:42.462] Browser ERROR   ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field } from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[100:08:19.673] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.674] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.675] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.675] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.676] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.676] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.676] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.677] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.679] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.681] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.681] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.683] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.683] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.683] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.685] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.685] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.688] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.688] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.689] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.690] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.692] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.692] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.693] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:19.693] Server  ERROR    ⨯ ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[100:08:20.462] Browser ERROR   ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[100:09:08.712] Browser ERROR   ./components/NoteForm/NoteForm.tsx:6:1
+Module not found: Can't resolve 'formik'
+  4 | import css from "./NoteForm.module.css";
+  5 | import type { NoteCreate } from "@/types/note";
+> 6 | import { Formik, Form, Field, FormikHelpers} from "formik";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | interface NoteFormProps {
+  8 |   onSubmit: (note: NoteCreate) => void;
+  9 |   onClose?: () => void;
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[100:10:08.970] Server  LOG      ✓ Compiled in 9ms
+[100:11:43.296] Server  LOG      ✓ Compiled in 27ms
+[100:12:14.695] Server  LOG      ✓ Compiled in 9ms
+[100:13:19.915] Server  LOG      ✓ Compiled in 72ms
+[100:14:52.354] Server  LOG      ✓ Compiled in 41ms
+[100:16:18.058] Server  LOG      ✓ Compiled in 23ms
+[100:17:38.330] Server  LOG      ✓ Compiled in 11ms
+[100:19:43.996] Server  LOG      ✓ Compiled in 25ms
+[100:27:29.193] Server  LOG      ✓ Compiled in 20ms
+[100:29:21.506] Server  LOG      ✓ Compiled in 17ms
+[100:47:13.641] Server  LOG      ✓ Compiled in 19ms
+[100:48:20.672] Server  LOG      ✓ Compiled in 30ms
+[100:48:55.254] Server  LOG      ✓ Compiled in 8ms
+[100:50:08.226] Server  LOG      ✓ Compiled in 8ms
+[100:52:01.943] Server  LOG      ✓ Compiled in 10ms
+[100:53:23.579] Server  LOG      ✓ Compiled in 20ms
+[100:55:35.343] Server  LOG      ✓ Compiled in 24ms
+[100:57:45.395] Server  LOG      ✓ Compiled in 21ms
+[100:58:50.397] Server  LOG      ✓ Compiled in 13ms
+[101:00:31.345] Server  LOG      ✓ Compiled in 13ms
+[101:02:58.328] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.328] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.329] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.329] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.331] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.331] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.331] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.332] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.333] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.333] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.334] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.334] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.335] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.335] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.335] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.336] Server  ERROR    ⨯ ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[101:02:58.352] Server  LOG      ✓ Compiled in 46ms
+[101:02:58.461] Browser ERROR   ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[101:03:23.578] Browser ERROR   ./components/Pagination/Pagination.tsx:3:1
+Module not found: Can't resolve 'react-paginate'
+  1 | "use client";
+  2 |
+> 3 | import ReactPaginate from "react-paginate";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import css from "./Pagination.module.css";
+  5 |
+  6 | interface PaginationProps {
+
+Import traces:
+  Client Component Browser:
+    ./components/Pagination/Pagination.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Pagination/Pagination.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found

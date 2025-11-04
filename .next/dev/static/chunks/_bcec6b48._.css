@@ -266,6 +266,10 @@
 @layer components;
 
 @layer utilities {
+  .flex {
+    display: flex;
+  }
+
   .hidden {
     display: none;
   }

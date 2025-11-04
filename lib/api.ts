@@ -1,6 +1,12 @@
 
 import axios from "axios";
-import type { NoteCreate, Note, NoteResponse } from "../types/note";
+import type { NoteCreate, Note } from "../types/note";
+
+export interface NoteResponse {
+  notes: Note[];
+  totalPages: number;
+  page: number;
+}
 
 const TOKEN = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
 
