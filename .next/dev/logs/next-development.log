@@ -5365,3 +5365,14 @@ https://nextjs.org/docs/messages/module-not-found
 [101:21:38.839] Server  LOG      ✓ Compiled in 10ms
 [101:21:53.336] Server  LOG      ✓ Compiled in 13ms
 [101:22:09.223] Server  LOG      ✓ Compiled in 28ms
+[101:29:19.728] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:19.847] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:19.848] Server  LOG      ✓ Compiled in 381ms
+[101:29:20.377] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:20.493] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:20.624] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:20.774] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:20.924] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:21.037] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
+[101:29:21.155] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/notes/loading"
+[101:29:37.540] Server  LOG      ✓ Compiled in 19ms
