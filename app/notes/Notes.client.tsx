@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { fetchNotes, createNote, deleteNote, NoteResponse } from "@/lib/api";
+import { fetchNotes, createNote, NoteResponse } from "@/lib/api";
 import type { NoteCreate } from "@/types/note";
 import NotesList from "@/components/NoteList/NoteList";
 import Pagination from "@/components/Pagination/Pagination";
@@ -55,23 +55,8 @@ export default function NotesClient( ) {
     },
   });
 
-  const deleteMutation = useMutation({
-    mutationFn: (id: string) => deleteNote(id),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["notes"] });
-    },
-    onError: (err) => {
-      console.error("Delete note error", err);
-      alert("Failed to delete note");
-    },
-  });
-
   const handleCreate = (note: NoteCreate) => {
     addMutation.mutate(note);
-  };
-
-  const handleDelete = (id: string) => {
-    deleteMutation.mutate(id);
   };
 
   const handleSearchChange = (value: string) => {
@@ -104,7 +89,7 @@ export default function NotesClient( ) {
         </Modal>
       )}
 
-      <NotesList notes={notes} onDelete={handleDelete} />
+      <NotesList notes={notes} />
 
       {totalPages > 1 && (
         <Pagination currentPage={page} totalPages={totalPages} onPageChange={(p) => setPage(p)} />

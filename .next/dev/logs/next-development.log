@@ -5360,3 +5360,8 @@ Import traces:
     ./app/notes/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[101:20:09.026] Server  LOG      ✓ Compiled in 20ms
+[101:20:58.273] Server  LOG      ✓ Compiled in 13ms
+[101:21:38.839] Server  LOG      ✓ Compiled in 10ms
+[101:21:53.336] Server  LOG      ✓ Compiled in 13ms
+[101:22:09.223] Server  LOG      ✓ Compiled in 28ms

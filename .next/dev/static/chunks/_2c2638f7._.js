@@ -776,38 +776,15 @@ function NotesClient() {
             }
         }["NotesClient.useMutation[addMutation]"]
     });
-    const deleteMutation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"])({
-        mutationFn: {
-            "NotesClient.useMutation[deleteMutation]": (id)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["deleteNote"])(id)
-        }["NotesClient.useMutation[deleteMutation]"],
-        onSuccess: {
-            "NotesClient.useMutation[deleteMutation]": ()=>{
-                queryClient.invalidateQueries({
-                    queryKey: [
-                        "notes"
-                    ]
-                });
-            }
-        }["NotesClient.useMutation[deleteMutation]"],
-        onError: {
-            "NotesClient.useMutation[deleteMutation]": (err)=>{
-                console.error("Delete note error", err);
-                alert("Failed to delete note");
-            }
-        }["NotesClient.useMutation[deleteMutation]"]
-    });
     const handleCreate = (note)=>{
         addMutation.mutate(note);
-    };
-    const handleDelete = (id)=>{
-        deleteMutation.mutate(id);
     };
     const handleSearchChange = (value)=>{
         setSearchQuery(value);
     };
     if (isLoading) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$loading$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 81,
+        lineNumber: 66,
         columnNumber: 25
     }, this);
     if (error || !data) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$error$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -815,7 +792,7 @@ function NotesClient() {
         reset: ()=>setPage(1)
     }, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 82,
+        lineNumber: 67,
         columnNumber: 30
     }, this);
     const notes = data.notes ?? [];
@@ -836,7 +813,7 @@ function NotesClient() {
                         children: "Create Note +"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 90,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SearchBox$2f$SearchBox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -844,7 +821,7 @@ function NotesClient() {
                         onChange: handleSearchChange
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 97,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     isFetching && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -854,13 +831,13 @@ function NotesClient() {
                         children: "Loading…"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 98,
+                        lineNumber: 83,
                         columnNumber: 24
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 89,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             isModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -870,20 +847,19 @@ function NotesClient() {
                     onClose: ()=>setIsModalOpen(false)
                 }, void 0, false, {
                     fileName: "[project]/app/notes/Notes.client.tsx",
-                    lineNumber: 103,
+                    lineNumber: 88,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 102,
+                lineNumber: 87,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteList$2f$NoteList$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                notes: notes,
-                onDelete: handleDelete
+                notes: notes
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 107,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Pagination$2f$Pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -892,21 +868,20 @@ function NotesClient() {
                 onPageChange: (p)=>setPage(p)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 110,
+                lineNumber: 95,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 88,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
-_s(NotesClient, "BZsXScjhK7UE4UmU7FwlDy6K7WM=", false, function() {
+_s(NotesClient, "cBSRdmQOvJzx6NtxwqGvJLoezy4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"]
     ];
 });
