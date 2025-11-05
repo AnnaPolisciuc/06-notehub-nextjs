@@ -8,7 +8,6 @@ import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 
 interface NoteFormProps {
-  onSubmit: (note: NoteCreate) => void;
   onClose?: () => void;
 }
 
@@ -23,10 +22,11 @@ const NoteSchema = Yup.object().shape({
   title: Yup.string()
     .trim()
     .required("Title is required")
+    .min(3, "Title must be 3 characters or more")
     .max(50, "Title must be 50 characters or less"),
   content: Yup.string()
     .trim()
-    .optional()
+    .notRequired()
     .max(500, "Content must be 500 characters or less"),
   tag: Yup.mixed<NoteCreate["tag"]>()
     .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"], "Please select a valid tag")

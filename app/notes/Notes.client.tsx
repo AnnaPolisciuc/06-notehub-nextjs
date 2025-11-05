@@ -56,9 +56,6 @@ export default function NotesClient( ) {
     },
   });
 
-  const handleCreate = (note: NoteCreate) => {
-    addMutation.mutate(note);
-  };
 
   const handleSearchChange = (value: string) => {
     setSearchQuery(value);
@@ -86,7 +83,7 @@ export default function NotesClient( ) {
 
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
-          <NoteForm onSubmit={handleCreate} onClose={() => setIsModalOpen(false)} />
+          <NoteForm onClose={() => setIsModalOpen(false)} />
         </Modal>
       )}
 

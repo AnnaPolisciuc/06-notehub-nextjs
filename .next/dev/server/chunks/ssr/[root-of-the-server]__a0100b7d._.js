@@ -471,8 +471,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index
 ;
 ;
 const NoteSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["object"]().shape({
-    title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("Title is required").max(50, "Title must be 50 characters or less"),
-    content: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().optional().max(500, "Content must be 500 characters or less"),
+    title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("Title is required").min(3, "Title must be 3 characters or more").max(50, "Title must be 50 characters or less"),
+    content: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().notRequired().max(500, "Content must be 500 characters or less"),
     tag: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixed"]().oneOf([
         "Todo",
         "Work",
@@ -762,15 +762,12 @@ function NotesClient() {
             alert("Failed to create note");
         }
     });
-    const handleCreate = (note)=>{
-        addMutation.mutate(note);
-    };
     const handleSearchChange = (value)=>{
         setSearchQuery(value);
     };
     if (isLoading) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$loading$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 67,
+        lineNumber: 64,
         columnNumber: 25
     }, this);
     if (error || !data) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$error$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -778,7 +775,7 @@ function NotesClient() {
         reset: ()=>setPage(1)
     }, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 68,
+        lineNumber: 65,
         columnNumber: 30
     }, this);
     const notes = data.notes ?? [];
@@ -799,7 +796,7 @@ function NotesClient() {
                         children: "Create Note +"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 76,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SearchBox$2f$SearchBox$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -807,7 +804,7 @@ function NotesClient() {
                         onChange: handleSearchChange
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 83,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     isFetching && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -817,35 +814,34 @@ function NotesClient() {
                         children: "Loading…"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 84,
+                        lineNumber: 81,
                         columnNumber: 24
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 75,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             isModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 onClose: ()=>setIsModalOpen(false),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteForm$2f$NoteForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    onSubmit: handleCreate,
                     onClose: ()=>setIsModalOpen(false)
                 }, void 0, false, {
                     fileName: "[project]/app/notes/Notes.client.tsx",
-                    lineNumber: 89,
+                    lineNumber: 86,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 88,
+                lineNumber: 85,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteList$2f$NoteList$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 notes: notes
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 93,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Pagination$2f$Pagination$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -854,13 +850,13 @@ function NotesClient() {
                 onPageChange: (p)=>setPage(p)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 96,
+                lineNumber: 93,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 74,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
