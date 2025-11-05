@@ -41,7 +41,9 @@ export default function NoteList({ notes }: NoteListProps) {
       {notes.map((note) => (
         <li key={note.id} className={css.listItem}>
           <h3 className={css.title}>{note.title}</h3>
+          <span className={css.tag}>{note.tag}</span>
           <p className={css.content}>{note.content.slice(0, 100)}...</p>
+          
           <div className={css.actions}>
             <button
               className={css.deleteButton}

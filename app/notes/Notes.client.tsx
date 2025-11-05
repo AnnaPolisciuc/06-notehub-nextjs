@@ -41,6 +41,7 @@ export default function NotesClient( ) {
     queryKey,
     queryFn: () => fetchNotes(page, 12, debounced), 
     staleTime: 1000 * 5,
+    placeholderData: (prevData) => prevData,
   });
 
   const addMutation = useMutation({

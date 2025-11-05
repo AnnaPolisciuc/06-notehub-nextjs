@@ -205,6 +205,14 @@ function NoteList({ notes }) {
                         lineNumber: 43,
                         columnNumber: 11
                     }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteList$2f$NoteList$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].tag,
+                        children: note.tag
+                    }, void 0, false, {
+                        fileName: "[project]/components/NoteList/NoteList.tsx",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteList$2f$NoteList$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].content,
                         children: [
@@ -213,7 +221,7 @@ function NoteList({ notes }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/NoteList/NoteList.tsx",
-                        lineNumber: 44,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -226,7 +234,7 @@ function NoteList({ notes }) {
                                 children: deletingId === note.id ? "Deleting..." : "Delete note"
                             }, void 0, false, {
                                 fileName: "[project]/components/NoteList/NoteList.tsx",
-                                lineNumber: 46,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, this),
                             errorId === note.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -234,13 +242,13 @@ function NoteList({ notes }) {
                                 children: "Failed to delete note. Please try again."
                             }, void 0, false, {
                                 fileName: "[project]/components/NoteList/NoteList.tsx",
-                                lineNumber: 54,
+                                lineNumber: 56,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/NoteList/NoteList.tsx",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -249,7 +257,7 @@ function NoteList({ notes }) {
                         children: "View details"
                     }, void 0, false, {
                         fileName: "[project]/components/NoteList/NoteList.tsx",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 ]
@@ -464,7 +472,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index
 ;
 const NoteSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["object"]().shape({
     title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("Title is required").max(50, "Title must be 50 characters or less"),
-    content: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("Content is required").max(500, "Content must be 500 characters or less"),
+    content: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().optional().max(500, "Content must be 500 characters or less"),
     tag: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixed"]().oneOf([
         "Todo",
         "Work",
@@ -736,7 +744,8 @@ function NotesClient() {
     const { data, isLoading, error, isFetching } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey,
         queryFn: ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fetchNotes"])(page, 12, debounced),
-        staleTime: 1000 * 5
+        staleTime: 1000 * 5,
+        placeholderData: (prevData)=>prevData
     });
     const addMutation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
         mutationFn: (payload)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createNote"])(payload),
@@ -761,7 +770,7 @@ function NotesClient() {
     };
     if (isLoading) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$loading$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 66,
+        lineNumber: 67,
         columnNumber: 25
     }, this);
     if (error || !data) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f$error$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -769,7 +778,7 @@ function NotesClient() {
         reset: ()=>setPage(1)
     }, void 0, false, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 67,
+        lineNumber: 68,
         columnNumber: 30
     }, this);
     const notes = data.notes ?? [];
@@ -790,7 +799,7 @@ function NotesClient() {
                         children: "Create Note +"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 75,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SearchBox$2f$SearchBox$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -798,7 +807,7 @@ function NotesClient() {
                         onChange: handleSearchChange
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 82,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     isFetching && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -808,13 +817,13 @@ function NotesClient() {
                         children: "Loading…"
                     }, void 0, false, {
                         fileName: "[project]/app/notes/Notes.client.tsx",
-                        lineNumber: 83,
+                        lineNumber: 84,
                         columnNumber: 24
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 74,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             isModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -824,19 +833,19 @@ function NotesClient() {
                     onClose: ()=>setIsModalOpen(false)
                 }, void 0, false, {
                     fileName: "[project]/app/notes/Notes.client.tsx",
-                    lineNumber: 88,
+                    lineNumber: 89,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 87,
+                lineNumber: 88,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NoteList$2f$NoteList$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 notes: notes
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Pagination$2f$Pagination$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -845,13 +854,13 @@ function NotesClient() {
                 onPageChange: (p)=>setPage(p)
             }, void 0, false, {
                 fileName: "[project]/app/notes/Notes.client.tsx",
-                lineNumber: 95,
+                lineNumber: 96,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/notes/Notes.client.tsx",
-        lineNumber: 73,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }

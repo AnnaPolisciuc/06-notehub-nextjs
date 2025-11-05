@@ -16,6 +16,7 @@ export default function NoteDetails({ note }: NoteDetailsProps) {
       <div className={css.item}>
         <div className={css.header}>
           <h2>{note.title}</h2>
+          <span className={css.tag}>{note.tag}</span>
         </div>
         <p className={css.content}>{note.content}</p>
         <p className={css.date}>Created: {new Date(note.createdAt).toLocaleDateString()}</p>

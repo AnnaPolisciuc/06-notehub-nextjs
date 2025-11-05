@@ -5376,3 +5376,58 @@ https://nextjs.org/docs/messages/module-not-found
 [101:29:21.037] Server  ERROR    ⨯ Error: The default export is not a React Component in "/notes/loading"
 [101:29:21.155] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/notes/loading"
 [101:29:37.540] Server  LOG      ✓ Compiled in 19ms
+[114:42:23.552] Server  LOG      ✓ Compiled in 25ms
+[114:43:37.419] Server  LOG      ✓ Compiled in 43ms
+[114:43:57.552] Server  LOG      ✓ Compiled in 22ms
+[114:44:13.802] Server  LOG      ✓ Compiled in 22ms
+[114:44:53.395] Server  LOG      ✓ Compiled in 30ms
+[114:48:40.739] Server  LOG      ✓ Compiled in 18ms
+[114:53:15.609] Server  LOG      ✓ Compiled in 48ms
+[114:53:16.250] Browser ERROR   ./components/NoteForm/NoteForm.tsx:30:3
+Parsing ecmascript source code failed
+  28 |     .trim()
+  29 |     .optional(),
+> 30 |   .max(500, "Content must be 500 characters or less"),
+     |   ^
+  31 |   tag: Yup.mixed<NoteCreate["tag"]>()
+  32 |     .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"], "Please select a valid tag")
+  33 |     .required("Tag is required"),
+
+Unexpected token `.`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+[115:01:39.250] Browser ERROR   ./components/NoteForm/NoteForm.tsx:30:7
+Parsing ecmascript source code failed
+  28 |     .trim()
+  29 |     .optional(),
+> 30 |   max(500, "Content must be 500 characters or less"),
+     |       ^^^
+  31 |   tag: Yup.mixed<NoteCreate["tag"]>()
+  32 |     .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"], "Please select a valid tag")
+  33 |     .required("Tag is required"),
+
+Unexpected token `numeric literal (500, 500)`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/NoteForm/NoteForm.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Client Component Browser]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/NoteForm/NoteForm.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Client Component SSR]
+    ./app/notes/Notes.client.tsx [Server Component]
+    ./app/notes/page.tsx [Server Component]
